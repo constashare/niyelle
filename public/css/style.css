@@ -1,0 +1,22 @@
+/* YOUR CUSTOM STYLES */
+.userPersonalBox {
+
+    width:380px;
+    overflow: -moz-scrollbars-vertical;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 300px;
+}
+
+#friendItem{
+    background: #00acd6;
+}
+
+.example-parent {
+    height: 20px;
+}
+
+
+.lessBordered {
+    border:none ! important;
+}
