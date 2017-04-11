@@ -45,7 +45,7 @@ class VideoManagerController extends Controller
 		// (rightcorner) ->
 		
 		$inputConfig = new HttpInputConfig();
-		$inputConfig->url = 'http://constashare.com/manager/uploads/zXAQepW8S-lH.mp4';
+		$inputConfig->url = $request['video_path'];
 		echo 'here';
 		$input = Input::create($inputConfig);
 		$inputConfig->url;
