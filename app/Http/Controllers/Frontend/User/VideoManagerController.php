@@ -46,7 +46,6 @@ class VideoManagerController extends Controller
 		
 		$inputConfig = new HttpInputConfig();
 		$inputConfig->url = $request['video_path'];
-		echo 'here';
 		$input = Input::create($inputConfig);
 		$inputConfig->url;
 		var_dump($inputConfig);
