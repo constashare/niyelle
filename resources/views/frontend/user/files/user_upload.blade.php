@@ -78,14 +78,14 @@ $token = $timestampz*3 . $tokenparta;
             browse_button : 'pickfiles', // you can pass in id...
             container: document.getElementById('container'), // ... or DOM Element itself
 
-            url : "http://127.0.0.1:8000/manager/upload.php",
+            url : "http://constashare.com/manager/upload.php",
 
 //            multipart: true,
 //            multipart_params : {"authenticity_token" : atoken, "file_title" : getTitle, "file_hashtag" : getHashtag,
 //                "file_description" : getDescription, "file_category" : getCategory},
 
             filters : {
-                max_file_size : '200mb',
+                max_file_size : '600mb',
                 mime_types: [
                     {title : "Image files", extensions : "jpg,gif,png"},
                     {title : "Video files", extensions : "mp4,avi,mov,mkv,flv,3gp,webm"}

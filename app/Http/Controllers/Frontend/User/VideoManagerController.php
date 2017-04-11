@@ -29,7 +29,7 @@ class VideoManagerController extends Controller
 	{
 		return view('frontend.user.video', [
 			'video_id' => $video_id,
-			'video_path' => 'http://127.0.0.1:8000/manager/'. base64_decode($video_path),
+			'video_path' => 'http://constashare.com/manager/'. base64_decode($video_path),
 		]);
 	}
 	
@@ -45,7 +45,7 @@ class VideoManagerController extends Controller
 		// (rightcorner) ->
 		
 		$inputConfig = new HttpInputConfig();
-		$inputConfig->url = 'http://127.0.0.1:8000/manager/uploads/zXAQepW8S-lH.mp4';
+		$inputConfig->url = 'http://constashare.com/manager/uploads/zXAQepW8S-lH.mp4';
 		echo 'here';
 		$input = Input::create($inputConfig);
 		$inputConfig->url;
