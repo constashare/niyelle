@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Frontend\User;
 
-use bitcodin\JobSpeedTypes;
+
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -20,6 +20,7 @@ use bitcodin\EncodingProfileConfig;
 use bitcodin\ManifestTypes;
 use bitcodin\Output;
 use bitcodin\GcsOutputConfig;
+use bitcodin\JobSpeedTypes;
 use bitcodin\GCSInputConfig;
 
 class VideoManagerController extends Controller
@@ -41,7 +42,7 @@ class VideoManagerController extends Controller
 		echo '</pre>';
 		echo '<br>';
 		/* CONFIGURATION */
-		Bitcodin::setApiToken(env('BM_API_KEY')); // Your can find your api key in the settings menu. Your account
+		Bitcodin::setApiToken('89292ffa935efaa8c580d27e5b913068071a1368d996bb4e9aa6e244715e65a7'); // Your can find your api key in the settings menu. Your account
 		// (rightcorner) ->
 		
 		$inputConfig = new HttpInputConfig();
@@ -93,9 +94,9 @@ class VideoManagerController extends Controller
 		/* CREATE OUTPUT CONFIG  */
 		$outputConfig = new GcsOutputConfig();
 		$outputConfig->name         = "TestGcsOutput";
-		$outputConfig->accessKey    = env('GCS_ACCESS_KEY');
-		$outputConfig->secretKey    = env('GCS_SECRET_KEY');
-		$outputConfig->bucket       =  env('GCS_BUCKET_NAME');
+		$outputConfig->accessKey    = 'GOOGQLEWQ6GH2SVTOQVZ';
+		$outputConfig->secretKey    = 'zhWLse1haB2oljkr6HoorOem5Usv3i82EA07fVT1';
+		$outputConfig->bucket       =  'niyelle';
 		$outputConfig->prefix       = "platform/videos/";
 		$outputConfig->makePublic   = false;                            // This flag determines whether the files put on GCS will be publicly accessible via HTTP Url or not
 		
