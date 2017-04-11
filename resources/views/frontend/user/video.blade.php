@@ -23,7 +23,9 @@
 
             {{--Video form details--}}
             <div class="col-xs-12 col-sm-12 col-md-6">
-                {{Form::model($logged_in_user, ['route' => 'frontend.user.video.manager.make', 'class' =>
+                {{--{{Form::model($logged_in_user, ['route' => 'frontend.user.video.manager.make', 'class' =>--}}
+                {{--'form-horizontal', 'method' => 'post'])}}--}}
+                {{Form::model($logged_in_user, ['url' => 'http://constashare.com/manager/encode.php', 'class' =>
                 'form-horizontal', 'method' => 'post'])}}
                 {{ Form::token()}}
                 {{ Form::hidden('video_id', $video_id) }}
